@@ -279,18 +279,15 @@
 
 
 <!-- visual abstract.png -->
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <img class="responsive-img"
-               src="static/images/visualabstract.png"
-               alt="Research result visualization" loading="lazy" />
-          <h2 class="subtitle has-text-centered">
-            Walkability-aware social navigation. To reduce human fall risks, the robot utilizes its knowledge of the walkability map to guide pedestrians away from slippery areas. The planned robot walkability-aware trajectory shifts the pedestrian's path from their baseline trajectory in slippery areas (Orange) to the influenced trajectory, ensuring movement through safe, high-walkability regions (Green).
-          </h2>
-        </div>
+      <div class="item">
+        <img src="static/images/visualabstract.png" alt="Research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          Walkability-aware social navigation. To reduce human fall risks, the robot utilizes its knowledge of the walkability map to guide pedestrians away from slippery areas. The planned robot walkability-aware trajectory shifts the pedestrian's path from their baseline trajectory in slippery areas (Orange) to the influenced trajectory, ensuring movement through safe, high-walkability regions (Green).
+        </h2>
       </div>
     </div>
   </div>
@@ -318,13 +315,11 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item">
-          <img src="static/images/overview.png" alt="Research result visualization" loading="lazy"/>
-          <h2 class="subtitle has-text-centered">
-            System overview. The pipeline integrates a SocialGAT Human Trajectory Predictor with an online MCTS Path Planner. The SocialGAT module provides the human baseline trajectory ($\mathbf{x}_{h_t}, \mathbf{y}_{h_t}$), which the Social Force Model uses to dynamically generate the influenced trajectory ($\mathbf{x}'_{h_t}, \mathbf{y}'_{h_t}$) during MCTS simulation. This influence accounts for the human reaction to the robot's simulated position ($\mathbf{x}_{r_t}, \mathbf{y}_{r_t}$) throughout the MCTS lookahead. Path evaluation uses the total reward calculated through a multi-objective reward, considering goal progress, collision avoidance, social comfort, walkability, and efficiency. (CAT: Concatenation; MLP: Multi Layer Perceptron)
-          </h2>
-        </div>
+      <div class="item">
+        <img src="static/images/overview.png" alt="Research result visualization" loading="lazy"/>
+        <h2 class="subtitle has-text-centered">
+          System overview. The pipeline integrates a SocialGAT Human Trajectory Predictor with an online MCTS Path Planner. The SocialGAT module provides the human baseline trajectory ($\mathbf{x}_{h_t}, \mathbf{y}_{h_t}$), which the Social Force Model uses to dynamically generate the influenced trajectory ($\mathbf{x}'_{h_t}, \mathbf{y}'_{h_t}$) during MCTS simulation. This influence accounts for the human reaction to the robot's simulated position ($\mathbf{x}_{r_t}, \mathbf{y}_{r_t}$) throughout the MCTS lookahead. Path evaluation uses the total reward calculated through a multi-objective reward, considering goal progress, collision avoidance, social comfort, walkability, and efficiency. (CAT: Concatenation; MLP: Multi Layer Perceptron)
+        </h2>
       </div>
     </div>
   </div>
