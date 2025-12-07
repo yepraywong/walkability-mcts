@@ -315,7 +315,7 @@
   <div class="hero-body">
     <div class="container">
       <div class="item">
-        <img src="static/images/overview.png" alt="Research result visualization" loading="lazy"/>
+        <img src="static/images/overview.png" alt="Research result visualization" style="max-width: 70%; height: auto; margin: 0 auto; display: block;" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
           System overview. The pipeline integrates a SocialGAT Human Trajectory Predictor with an online MCTS Path Planner. The SocialGAT module provides the human baseline trajectory ($\mathbf{x}_{h_t}, \mathbf{y}_{h_t}$), which the Social Force Model uses to dynamically generate the influenced trajectory ($\mathbf{x}'_{h_t}, \mathbf{y}'_{h_t}$) during MCTS simulation. This influence accounts for the human reaction to the robot's simulated position ($\mathbf{x}_{r_t}, \mathbf{y}_{r_t}$) throughout the MCTS lookahead. Path evaluation uses the total reward calculated through a multi-objective reward, considering goal progress, collision avoidance, social comfort, walkability, and efficiency. (CAT: Concatenation; MLP: Multi Layer Perceptron)
         </h2>
